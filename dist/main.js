@@ -100,9 +100,20 @@ __webpack_require__(/*! ./js/a.js */ "./src/js/a.js");
 
 __webpack_require__(/*! ./js/b.js */ "./src/js/b.js");
 
+__webpack_require__(/*! ./js/img.js */ "./src/js/img.js");
+
 __webpack_require__(/*! ./scss/main.scss */ "./src/scss/main.scss");
 
-alert("Hello");
+/***/ }),
+
+/***/ "./src/img/code.png":
+/*!**************************!*\
+  !*** ./src/img/code.png ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "code.png";
 
 /***/ }),
 
@@ -131,6 +142,24 @@ console.log("File A");
 
 
 console.log("File B");
+
+/***/ }),
+
+/***/ "./src/js/img.js":
+/*!***********************!*\
+  !*** ./src/js/img.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _code = __webpack_require__(/*! ../img/code.png */ "./src/img/code.png");
+
+var _code2 = _interopRequireDefault(_code);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
 

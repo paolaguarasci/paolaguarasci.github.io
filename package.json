@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My awesome portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolaguarasci/paolaguarasci.github.io.git"
+  },
+  "author": "Paola Guarasci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paolaguarasci/paolaguarasci.github.io/issues"
+  },
+  "homepage": "https://github.com/paolaguarasci/paolaguarasci.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/scss/main.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA,YAAY;;AAEZ;AACA,iEAAiE","file":"main.css","sourcesContent":["body {\n  background: #444;\n  color: white;\n  font: 100; }\n\n.myDiv {\n  background: #334455 url(code.png) no-repeat center center/32px; }\n"],"sourceRoot":""}

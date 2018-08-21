@@ -1,60 +1,34 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+  entry: ["./index.js"],
   mode: "development",
-  entry: {
-    // Alow multiple entry point
-    main: "./app.js"
-  },
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "js/bundle.js"
+    path: path.resolve(__dirname, "build"),
+    filename: "bundle.js"
   },
-  devtool: "source-map",
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "bundle.css"
+    })
+  ],
   module: {
     rules: [
       {
-        // ES6+
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["env"]
-          }
-        }
-      },
-      {
-        // SASS and CSS
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       },
       {
-        // IMG
-        test: /\.(png|svg|jpg|gif)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "img/[name].[ext]"
-          }
-        }
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        // Limiting the size of the woff fonts breaks font-awesome ONLY for the extract text plugin
+        // loader: "url?limit=10000"
+        use: "url-loader"
       },
       {
-        // HTML
-        test: /\.(html|htm)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[ext]"
-          }
-        }
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+        use: "url-loader"
       }
-    ] // end rules
-  }, // end modules
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "css/[name].css"
-    })
-  ] // end plugins
+    ]
+  }
 };

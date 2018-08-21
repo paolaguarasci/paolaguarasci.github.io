@@ -1,2 +1,27 @@
-@import "normalize.scss";
-@import "html5boilerplate.scss";
+html {
+  background-color: greenyellow;
+}
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+$fa-font-path: "./";
+
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+.user {
+  @include fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.twitter {
+  @include fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}

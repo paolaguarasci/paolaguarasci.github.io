@@ -94,7 +94,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction requireAll(r) {\n  r.keys().forEach(r);\n}\n\n// // Import all IMG files\n// const img = requireAll(require.context(\"./src/img\", true, /\\.(png|jpg|gif)$/));\n\n// Import all HTML files\nrequireAll(__webpack_require__(\"./src sync recursive \\\\.(html|htm|)$\"));\n\n// Font Awesome TEST Stuff\nconst icon = document.createElement(\"i\");\nconst cl = [\"fas\", \"fa-asd\", \"fa-5x\"];\nfor (let i in cl) {\n  icon.classList.add(cl[i]);\n}\n\nconst icons = document.querySelector(\".icons\");\nconst link = document.createElement(\"a\");\nlink.href = \"#!\";\nlink.appendChild(icon);\nicons.appendChild(link);\n\n// _____________________ //\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n__webpack_require__(/*! normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n\n\nfunction requireAll(r) {\n  r.keys().forEach(r);\n}\n\n// Import all IMG files\nconst img = requireAll(__webpack_require__(\"./src/img sync recursive \\\\.(png|jpg|gif)$\"));\n\n// Import all HTML files\nrequireAll(__webpack_require__(\"./src sync recursive \\\\.(html|htm|)$\"));\n\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/normalize.css/normalize.css":
+/*!**************************************************!*\
+  !*** ./node_modules/normalize.css/normalize.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./node_modules/normalize.css/normalize.css?");
 
 /***/ }),
 
@@ -106,6 +117,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 /***/ (function(module, exports) {
 
 eval("function webpackEmptyContext(req) {\n\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\te.code = 'MODULE_NOT_FOUND';\n\tthrow e;\n}\nwebpackEmptyContext.keys = function() { return []; };\nwebpackEmptyContext.resolve = webpackEmptyContext;\nmodule.exports = webpackEmptyContext;\nwebpackEmptyContext.id = \"./src sync recursive \\\\.(html|htm|)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(html%7Chtm%7C)$?");
+
+/***/ }),
+
+/***/ "./src/img sync recursive \\.(png|jpg|gif)$":
+/*!***************************************!*\
+  !*** ./src/img sync \.(png|jpg|gif)$ ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./background.jpg\": \"./src/img/background.jpg\",\n\t\"./me.jpg\": \"./src/img/me.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/img sync recursive \\\\.(png|jpg|gif)$\";\n\n//# sourceURL=webpack:///./src/img_sync_\\.(png%7Cjpg%7Cgif)$?");
+
+/***/ }),
+
+/***/ "./src/img/background.jpg":
+/*!********************************!*\
+  !*** ./src/img/background.jpg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/background.jpg\";\n\n//# sourceURL=webpack:///./src/img/background.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/me.jpg":
+/*!************************!*\
+  !*** ./src/img/me.jpg ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/me.jpg\";\n\n//# sourceURL=webpack:///./src/img/me.jpg?");
 
 /***/ }),
 

@@ -1,5 +1,6 @@
 require("normalize.css");
 import "./src/scss/main.scss";
+import "./src/js/main.js";
 
 function requireAll(r) {
   r.keys().forEach(r);

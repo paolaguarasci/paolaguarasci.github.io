@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n__webpack_require__(/*! normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n\n\nfunction requireAll(r) {\n  r.keys().forEach(r);\n}\n\n// Import all IMG files\nconst img = requireAll(__webpack_require__(\"./src/img sync recursive \\\\.(png|jpg|gif)$\"));\n\n// Import all HTML files\nrequireAll(__webpack_require__(\"./src sync recursive \\\\.(html|htm|)$\"));\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _src_js_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/js/main.js */ \"./src/js/main.js\");\n/* harmony import */ var _src_js_main_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_js_main_js__WEBPACK_IMPORTED_MODULE_1__);\n__webpack_require__(/*! normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n\n\n\nfunction requireAll(r) {\n  r.keys().forEach(r);\n}\n\n// Import all IMG files\nconst img = requireAll(__webpack_require__(\"./src/img sync recursive \\\\.(png|jpg|gif)$\"));\n\n// Import all HTML files\nrequireAll(__webpack_require__(\"./src sync recursive \\\\.(html|htm|)$\"));\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -150,6 +150,17 @@ eval("module.exports = __webpack_require__.p + \"img/background.jpg\";\n\n//# so
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"img/me.jpg\";\n\n//# sourceURL=webpack:///./src/img/me.jpg?");
+
+/***/ }),
+
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Select DOM Items\nconst menuBtn = document.querySelector(\".menu-btn\");\nconst menu = document.querySelector(\".menu\");\nconst menuNav = document.querySelector(\".menu-nav\");\nconst menuBranding = document.querySelector(\".menu-branding\");\n\nconst navItems = document.querySelectorAll(\".nav-items\");\n\n// Set initial state of Menu\nlet showMenu = false;\n\nfunction toggleMenu() {\n  if (!showMenu) {\n    menuBtn.classList.add(\"close\");\n    menu.classList.add(\"show\");\n    menuNav.classList.add(\"show\");\n    menuBranding.classList.add(\"show\");\n    navItems.forEach(navItem => navItem.classList.add(\"show\"));\n\n    // Set menu status\n    showMenu = true;\n  } else {\n    menuBtn.classList.remove(\"close\");\n    menu.classList.remove(\"show\");\n    menuNav.classList.remove(\"show\");\n    menuBranding.classList.remove(\"show\");\n    navItems.forEach(navItem => navItem.classList.add(\"show\"));\n    // Set menu status\n    showMenu = false;\n  }\n}\n\nmenuBtn.addEventListener(\"click\", toggleMenu);\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 

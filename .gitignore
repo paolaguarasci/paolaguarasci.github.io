@@ -1,5 +1,6 @@
 # Build
 public
+.vscode
 
 # Host
 .firebase

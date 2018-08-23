@@ -5,19 +5,24 @@ module.exports = {
   entry: ["./index.js"],
   mode: "development",
   output: {
-    path: path.resolve(__dirname, "build"),
-    filename: "bundle.js"
+    path: path.resolve(__dirname, "public"),
+    filename: "js/bundle.js"
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "bundle.css"
+      filename: "css/bundle.css"
     })
   ],
   module: {
     rules: [
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader?url=false",
+          // "resolve-url-loader",
+          "sass-loader"
+        ]
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -54,6 +59,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(htm|html)/,
+        use: [{ loader: "file-loader", options: { name: "[name].[ext]" } }]
       }
     ]
   }

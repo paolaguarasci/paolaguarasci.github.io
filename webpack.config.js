@@ -20,7 +20,7 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader?url=false",
-          // "resolve-url-loader",
+          "resolve-url-loader",
           "sass-loader"
         ]
       },

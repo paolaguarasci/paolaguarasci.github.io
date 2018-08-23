@@ -1,6 +1,6 @@
 // --- Variables ------- //
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: rgb(10, 70, 8);
+$secondary-color: #5e91ff;
 $show-home-image: true;
 $home-image: url("../img/background.jpg");
 $background-opacity: 0.9;
@@ -34,5 +34,21 @@ $background-opacity: 0.9;
 // Media qeury mixin
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }

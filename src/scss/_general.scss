@@ -104,6 +104,46 @@ main {
   border-bottom: $secondary-color 5px solid;
 }
 
+// Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 2rem; // BT use 0.7rem, i prefer a biggest space
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 2px set-text-color($primary-color) solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.5rem;
+  &:hover {
+    color: set-text-color($secondary-color);
+    background: $secondary-color;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: set-text-color($primary-color);
+}
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: set-text-color($primary-color);
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;

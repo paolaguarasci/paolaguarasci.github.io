@@ -1,8 +1,14 @@
 // Wides screen
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 // Desktops & Laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 // Tablets & Small Laptops
 @include mediaMd {
@@ -52,6 +58,9 @@
       "job3";
     grid-template-columns: 1fr;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 // Smartphones
 @include mediaSm {
@@ -61,5 +70,8 @@
       font-size: 4rem;
       margin-top: 10vh;
     }
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }

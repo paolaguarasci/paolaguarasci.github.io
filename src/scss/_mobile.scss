@@ -65,7 +65,8 @@
 // Smartphones
 @include mediaSm {
   main {
-    padding: 2.5rem;
+    padding: 0rem;
+    padding-top: 0.9rem;
     &#home > h1 {
       font-size: 4rem;
       margin-top: 10vh;
@@ -73,5 +74,21 @@
   }
   .projects {
     grid-template-columns: 1fr;
+    grid-gap: 5;
+    h3 {
+      font-weight: 600;
+      text-align: left;
+    }
+    h3,
+    p {
+      text-align: justify;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+    img {
+      border: none;
+      border-bottom: solid 3px #fff;
+      border-top: solid 3px #fff;
+    }
   }
 }

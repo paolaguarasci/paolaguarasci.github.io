@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "My awesome webpack starter",
   "main": "src/app.html",
+  "homepage": "https://paolaguarasci.github.io/modern/",
   "scripts": {
     "clean": "rm -rf public/",
     "build": "./node_modules/webpack/bin/webpack.js -p",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --inline"
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --inline",
+    "deploy": "gh-pages -d public"
   },
   "author": "Paola Guarasci",
   "license": "MIT",
@@ -40,6 +42,5 @@
   },
   "bugs": {
     "url": "https://github.com/paolaguarasci/paolaguarasci.github.io/issues"
-  },
-  "homepage": "https://github.com/paolaguarasci/paolaguarasci.github.io#readme"
+  }
 }

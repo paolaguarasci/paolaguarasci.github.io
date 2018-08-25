@@ -55,9 +55,16 @@
       "bio"
       "job1"
       "job2"
-      "job3";
+      "job3"
+      "job4";
     grid-template-columns: 1fr;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    text-align: justify;
   }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }

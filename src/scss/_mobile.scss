@@ -74,6 +74,23 @@
       width: 100%;
     }
   }
+
+  main#post {
+    img {
+      width: 100%;
+      margin: 0;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      padding: 1rem;
+    }
+  }
 }
 // Smartphones
 @include mediaSm {
@@ -110,6 +127,22 @@
           border-top: solid 3px #fff;
         }
       }
+    }
+  }
+  main#post {
+    img {
+      width: 100%;
+      margin: 0;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      padding: 1rem;
     }
   }
 }

@@ -85,23 +85,31 @@
       margin-top: 10vh;
     }
   }
-  .projects {
-    grid-template-columns: 1fr;
-    grid-gap: 5;
-    h3 {
-      font-weight: 600;
-      text-align: left;
-    }
-    h3,
-    p {
-      text-align: justify;
-      padding: 0.5rem 2rem 0.5rem 2rem;
-    }
+  .bio {
+    padding: 0 1rem 0 1rem;
+  }
+  main#work {
+    .project-group {
+      .projects {
+        grid-template-columns: 1fr;
+        grid-gap: 5;
+        h3 {
+          font-weight: 600;
+          text-align: left;
+        }
+        h3,
+        p {
+          text-align: justify;
 
-    img {
-      border: none;
-      border-bottom: solid 3px #fff;
-      border-top: solid 3px #fff;
+          padding: 0.5rem 2rem 0.5rem 2rem;
+        }
+
+        img {
+          border: none;
+          border-bottom: solid 3px #fff;
+          border-top: solid 3px #fff;
+        }
+      }
     }
   }
 }

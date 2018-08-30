@@ -39,10 +39,14 @@
 
         <img src="img/if_pen_stroke_sketch_doodle_lineart_216_451498.png" alt="">
         <h1 class="error">404</h1>
-        <h2 class="leading__err">Ops! This URL is wrong, now your will redirecto to home. </h2>
+        <h2 class="leading__err">Ops! This URL is wrong, now your will redirecto to <a href="/"> home.</a></h2>
     </main>
 
-
+    <script>
+        setTimeout(function () {
+            window.location.href = "/";
+        }, 5000);
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124563859-1"></script>
@@ -53,7 +57,9 @@
 
         gtag('config', 'UA-124563859-1');
     </script>
+    <!--
     <script src="js/bundle.js "></script>
+    -->
 </body>
 
 </html>
